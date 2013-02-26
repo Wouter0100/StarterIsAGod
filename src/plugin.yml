@@ -1,0 +1,33 @@
+name: StarterIsAGod
+main: me.Wouter0100.StarterIsAGod.StarterIsAGod
+version: 1.0
+description: This plugin give a Starter god for a certain time.
+commands:
+    sg:
+        description: StarterIsAGod main command
+        usage: /sg <command>
+        aliases: [starterisagod]
+permissions:
+  starterisagod.*:
+      description: Full access to StarterIsAGod.
+      children:
+          starterisagod.on: true
+          starterisagod.off: true
+          starterisagod.stop: true
+          starterisagod.time: true
+          starterisagod.get: true
+  starterisagod.on:
+      description: Turn God on when time isnt done.
+      default: true
+  starterisagod.off:
+      description: Turn God off when time isnt done.
+      default: true
+  starterisagod.stop:
+      description: Turn off God for all time, No return.
+      default: true
+  starterisagod.time:
+      description: See how long you have God.
+      default: true
+  starterisagod.get:
+      description: The permission to get God when new player joins. 
+      default: true
